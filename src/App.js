@@ -1,7 +1,9 @@
 import './App.css'
+import Navbar from './components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
-  return <h2>Project Portfolio</h2>
+  return <Navbar></Navbar>
 }
 
 export default App

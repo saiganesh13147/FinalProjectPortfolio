@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+:root {
+  --primary-black: #000;
+  --primary-green: #008000;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/****  NavBar Links ***/
+nav a.nav-link {
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-nav > li > a {
+  margin-left: 45px;
+  color: var(--primary-black) !important;
+  border-top: 0.19rem solid var(--primary-dark);
+}
+.navbar-brand {
+  max-width: 15rem;
+  padding: 0 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.19rem solid var(--primary-green);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a:hover {
+  border-top: 0.19rem solid var(--primary-green);
 }
