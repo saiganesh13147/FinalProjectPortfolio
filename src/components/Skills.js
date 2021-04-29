@@ -14,7 +14,7 @@ const Skills = () => {
       <h2 className='py-5'> My Skills</h2>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-4 col-sm-6'>
+          <div className='col-lg-4 col-md-4 col-sm-6'>
             <div className='box'>
               <div className='circle'>
                 <FontAwesomeIcon icon={faCloud} className='icon' size='2x' />
@@ -48,7 +48,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-4 col-sm-6'>
+          <div className='col-lg-4 col-md-4 col-sm-6'>
             <div className='box'>
               <div className='circle'>
                 <FontAwesomeIcon icon={faFileCode} className='icon' size='2x' />
@@ -82,7 +82,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-4 col-sm-6'>
+          <div className='col-lg-4 col-md-4 col-sm-6'>
             <div className='box'>
               <div className='circle'>
                 <FontAwesomeIcon icon={faCode} className='icon' size='2x' />
