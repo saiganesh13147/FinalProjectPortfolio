@@ -8,39 +8,7 @@ import Skills from './components/Skills'
 import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
-
-function App() {
-  return (
-    <>
-      <Particles
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900,
-              },
-            },
-            shape: {
-              type: 'circle',
-              stroke: {
-                width: 6,
-                color: '#f9ab00',
-              },
-            },
-          },
-        }}
-      />
-      <Navbar></Navbar>
-      <Header></Header>
-      <About></About>
-      <Skills />
-      <Experience />
-      <Portfolio />
-      <Contact />
-    </>
-  )
-}
-
+import Footer from './components/Footer'
+function App(){return(<><Particles
+params={{particles:{number:{value:30,density:{enable:!0,value_area:900,},},shape:{type:'circle',stroke:{width:6,color:'#f9ab00',},},},}}/><Navbar></Navbar><Header></Header><About></About><Skills/><Experience/><Portfolio/><Contact/><Footer/></>)}
 export default App
